@@ -14,7 +14,7 @@ export interface FetchNotesParams {
   page: number;
   perPage: number;
   search?: string;
-  tag?: NoteTag;
+  tag?: string;
 }
 
 //інтерфейс уже нормалізованої відповіді, з якою буде працювати React-код
