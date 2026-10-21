@@ -14,7 +14,7 @@ import Loader from '@/components/Loader/Loader';
 import ErrorView from '@/components/ErrorView/ErrorView';
 
 type NotesClientProps = {
-  tag: string;
+  tag: string | undefined;
 };
 
 export default function NotesClient({ tag }: NotesClientProps) {
@@ -29,7 +29,7 @@ export default function NotesClient({ tag }: NotesClientProps) {
         page,
         perPage: 12,
         search,
-        tag: tag === 'all' ? undefined : tag,
+        tag,
       }),
     placeholderData: keepPreviousData,
   });

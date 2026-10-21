@@ -1,4 +1,4 @@
-import css from './LayoutNotes.module.css';
+import css from './layout.module.css';
 
 interface FilterLayoutProps {
   children: React.ReactNode;
